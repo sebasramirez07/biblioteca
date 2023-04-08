@@ -1,0 +1,7 @@
+C:\Users\sebastian ramirez\source\repos\biblioteca\biblioteca\obj\Debug\biblioteca.csproj.AssemblyReference.cache
+C:\Users\sebastian ramirez\source\repos\biblioteca\biblioteca\obj\Debug\biblioteca.directorio1.resources
+C:\Users\sebastian ramirez\source\repos\biblioteca\biblioteca\obj\Debug\biblioteca.Genero.resources
+C:\Users\sebastian ramirez\source\repos\biblioteca\biblioteca\obj\Debug\biblioteca.Inicio.resources
+C:\Users\sebastian ramirez\source\repos\biblioteca\biblioteca\obj\Debug\biblioteca.Properties.Resources.resources
+C:\Users\sebastian ramirez\source\repos\biblioteca\biblioteca\obj\Debug\biblioteca.csproj.GenerateResource.cache
+C:\Users\sebastian ramirez\source\repos\biblioteca\biblioteca\obj\Debug\biblioteca.csproj.CoreCompileInputs.cache

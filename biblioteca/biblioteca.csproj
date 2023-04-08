@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED33B8E3-0FC4-4E4D-9CDE-58C353291A05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>biblioteca</RootNamespace>
+    <AssemblyName>biblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>4-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accion.Designer.cs">
+      <DependentUpon>accion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pago.Designer.cs">
+      <DependentUpon>pago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infantil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infantil.Designer.cs">
+      <DependentUpon>infantil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="terror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="terror.Designer.cs">
+      <DependentUpon>terror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Genero.Designer.cs">
+      <DependentUpon>Genero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.cs">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="accion.resx">
+      <DependentUpon>accion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pago.resx">
+      <DependentUpon>pago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infantil.resx">
+      <DependentUpon>infantil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="terror.aa-ER.resx">
+      <DependentUpon>terror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="terror.resx">
+      <DependentUpon>terror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Genero.resx">
+      <DependentUpon>Genero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="4-removebg-preview.ico" />
+    <None Include="Resources\pZc0GpA8jPTwqHuABnSW6XwvWAi.jpg" />
+    <None Include="Resources\cqWXH5rYHTD32I5RY6pHR828BrO.jpg" />
+    <None Include="Resources\bPIm1SXYp5RQ3c4wP91JQRewIb8.jpg" />
+    <None Include="Resources\3f4ETSwknZs74lmUYC7ENIMRBMP.jpg" />
+    <None Include="Resources\zgH8Ej50n2cvJCMJrxd4twEwSqz.jpg" />
+    <None Include="Resources\wy8A7Lsh5WLXi99VeJa47l8MC5l.jpg" />
+    <None Include="Resources\la6BUTGhRHumNXiEGi9A2if6cZd.jpg" />
+    <None Include="Resources\ao0YYCjW2FjmKUvvaLVg6JwNdRY.jpg" />
+    <None Include="Resources\wSqAXL1EHVJ3MOnJzMhUngc8gFs.jpg" />
+    <None Include="Resources\q7wOU97RhJbwVD56FwB3zkY7wRi.jpg" />
+    <None Include="Resources\m0Xa3ip4yegzXyTeegooUZVuING.jpg" />
+    <None Include="Resources\gKpsfpUtleiVTBInYnVRHq669nV.jpg" />
+    <None Include="Resources\4-removebg-preview.png" />
+    <None Include="Resources\links peliculas trabajo.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
